@@ -10,9 +10,15 @@ public class Simba {
             System.out.println("And i am scared of aliens");
         }
 
-        int topScore = 100;
-        if (topScore > 100) {
+        int topScore = 80;
+        if (topScore < 100) {
             System.out.println("you got the high score!");
         }
+
+        int secondTopScore = 60;
+        if (topScore > secondTopScore && topScore < 100) {
+            System.out.println("greater than second top score and less then 100");
+        }
     }
+
 }
