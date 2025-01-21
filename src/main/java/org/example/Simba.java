@@ -11,7 +11,7 @@ public class Simba {
         }
 
         int topScore = 100;
-        if (topScore == 100) {
+        if (topScore != 100) {
             System.out.println("you got the high score!");
         }
     }
