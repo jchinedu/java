@@ -19,6 +19,12 @@ public class Simba {
         if ((topScore > secondTopScore) && (topScore < 100)) {
             System.out.println("greater than second top score and less then 100");
         }
+
+        if ((topScore > 90) || (secondTopScore <= 90)) {
+            System.out.println("either or both of the conditions are true");
+        }
+
+
     }
 
 }
