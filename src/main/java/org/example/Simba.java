@@ -15,8 +15,8 @@ public class Simba {
             System.out.println("you got the high score!");
         }
 
-        int secondTopScore = 60;
-        if (topScore > secondTopScore && topScore < 100) {
+        int secondTopScore = 81;
+        if ((topScore > secondTopScore) && (topScore < 100)) {
             System.out.println("greater than second top score and less then 100");
         }
     }
