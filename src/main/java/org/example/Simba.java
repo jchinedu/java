@@ -23,6 +23,20 @@ public class Simba {
         if ((topScore > 90) || (secondTopScore <= 90)) {
             System.out.println("either or both of the conditions are true");
         }
+        int newValue = 50;
+        if (newValue == 50) {
+            System.out.println("this is an true");
+        }
+        boolean isCar = false;
+        if (isCar = true) {
+            System.out.println("this is supposed to happen");
+        }
+        String makeOfcar = "Volkswagen";
+        boolean isDomestic = makeOfcar == "Volkswagen" ? false : true;
+
+                if (isDomestic) {
+                    System.out.println("this car is domestic to our country");
+                }
 
 
     }
