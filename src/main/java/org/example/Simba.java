@@ -37,6 +37,8 @@ public class Simba {
                 if (isDomestic) {
                     System.out.println("this car is domestic to our country");
                 }
+                String s = (isDomestic) ? "this car is domestic" : "this car is not domestic";
+                System.out.println(s);
 
 
     }
