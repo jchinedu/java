@@ -1,34 +1,19 @@
 public class New {
     public static void main(String[] args) {
-        boolean gameon = true;
-        int score = 10000;
-        int levelcompleted = 8;
-        int bonus = 200;
-        int finalscore = score;
 
-        johnny(true, 10000, 8, 200);
+     int highscore =johnny(true, 10000, 8, 200);
+        johnny(true,5000,5,100);
+        System.out.println("the score is " + highscore);
+    }
+    public static int johnny(boolean gameon, int score, int levelcompleted, int bonus) {
+       int finalscore = score;
 
-        score = 1000;
-        levelcompleted = 8;
-        bonus = 200;
-
-        finalscore = score;
         if (gameon) {
-            finalscore += (levelcompleted * bonus);
-            System.out.println("your final score was" + finalscore);
-        }
-
-//        if (gameon == true) {
-//            finalscore += (levelcompleted * bonus);
-//            System.out.println("your final score was " + finalscore);
-//        }
-    }
-    public static void johnny(boolean gameon, int score, int levelcompleted, int bonus) {
-
-    int finalscore = score;
-
-        if (gameon == true) {
         finalscore += (levelcompleted * bonus);
-        System.out.println("your final score was " + finalscore);}
+        finalscore += 1000;
+        System.out.println("your final score was" + finalscore);
+        }
+        return finalscore;
     }
+
 }

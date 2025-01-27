@@ -9,5 +9,6 @@ public class Jce {
         int anothervariable = 50;
         myVariable--;
         System.out.println("myVariable = " + myVariable);
+
     }
 }
