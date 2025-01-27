@@ -2,6 +2,14 @@ public class Myproject {
     public static void main(String[] args) {
         int highscoreposition = calculateHighScorePosition(1500);
         displayHighScorePosition("tim", highscoreposition);
+         highscoreposition = calculateHighScorePosition(1000);
+        displayHighScorePosition("john", highscoreposition);
+         highscoreposition = calculateHighScorePosition(500);
+        displayHighScorePosition("ejiro", highscoreposition);
+         highscoreposition = calculateHighScorePosition(100);
+        displayHighScorePosition("deedy", highscoreposition);
+         highscoreposition = calculateHighScorePosition(25);
+        displayHighScorePosition("blaze", highscoreposition);
     }
     public static void displayHighScorePosition(String playername, int highscoreposition) {
         System.out.println(playername + " managed to get into position " + highscoreposition + " on the high score list ");
