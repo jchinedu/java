@@ -2,7 +2,7 @@ public class Myproject {
     public static void main(String[] args) {
         int highscoreposition = calculateHighScorePosition(1500);
         displayHighScorePosition("tim", highscoreposition);
-         highscoreposition = calculateHighScorePosition(1000);
+          highscoreposition = calculateHighScorePosition(1000);
         displayHighScorePosition("john", highscoreposition);
          highscoreposition = calculateHighScorePosition(500);
         displayHighScorePosition("ejiro", highscoreposition);
