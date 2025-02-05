@@ -1,9 +1,14 @@
 package org.example;
-
+import java.util.Scanner;
 public class Parsing {
     public static void main(String[] args) {
 
         int currentYear = 2022;
+        try {
+            System.out.println(getInputFromconsole(currentYear));
+        } catch (NullPointerException e) {
+            System.out.println(getinputFromScanner(currentYear));
+        }
         System.out.println(getInputFromconsole(currentYear));
         System.out.println(getinputFromScanner(currentYear));
 
@@ -20,11 +25,19 @@ public class Parsing {
         public static String getInputFromconsole(int currentyear) {
         String name = System.console().readLine("hi, whats your name? ");
         System.out.println("hi " + name + ", thanks for taking the course");
-        String dateofBirth = System.console().readline("what year were you born?");
-            int age = currentyear - integer.parseint(dateofBirth);
+        String dateofBirth = System.console().readLine("what year were you born?");
+            int age = currentyear - Integer.parseInt(dateofBirth);
             return "so you are " + age + " years old";
         }
         public static String getinputFromScanner(int currentyear) {
-            return "";
+        Scanner scanner = new Scanner(System.in);
+            // String name = System.console().readLine("hi, whats your name? ");
+            System.out.println("hi what's your name ");
+            String name = scanner.nextLine();
+            System.out.println("hi " + name + ", thanks for taking the course");
+            String dateofBirth = System.console().readLine("what year were you born?");
+            int age = currentyear - Integer.parseInt(dateofBirth);
+            return "so you are " + age + " years old";
+
         }
 }
